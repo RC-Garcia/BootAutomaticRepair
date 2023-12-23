@@ -1,0 +1,10 @@
+import os
+
+def restart_computer():
+    try:
+        os.system("shutdown /r /t 0 /f")
+    except Exception as e:
+        print(f"Error: {e}")
+
+if __name__ == "__main__":
+    restart_computer()
